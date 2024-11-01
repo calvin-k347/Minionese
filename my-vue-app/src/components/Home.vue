@@ -13,9 +13,13 @@
 <div class="section">
   <p class="subtitle">Phonology</p>
 </div>
+<router-link to="/syntax">
 <div class="section">
   <p class="subtitle">Syntax</p>
   </div>
+</router-link>
+
+
 </template>
 
 <style>
@@ -56,6 +60,11 @@ body {
 
 <script>
 export default {
+  methods: {
+    goToSyntax() {
+      this.$router.push('/syntax');
+    }
+  },
   name: 'Home',
 };
 </script>
